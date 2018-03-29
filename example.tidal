@@ -1,0 +1,9 @@
+-- Put this in another directory for it to work!
+
+:m + DanceDirt
+
+s1 <- danceDirtStream
+
+cps 0.5
+
+s1 $ every 2 rev $ s "G0050012 G0050015 G0050106"
