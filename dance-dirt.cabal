@@ -1,0 +1,46 @@
+name:                dance-dirt
+version:             0.1.0.0
+-- synopsis:
+-- description:
+-- license:             GPL-3
+-- license-file:        LICENSE
+-- author:
+-- maintainer:
+-- copyright:
+category:            Graphics
+build-type:          Simple
+-- extra-source-files:  ChangeLog.md
+cabal-version:       >=1.10
+
+
+executable DanceDirt
+  main-is:             dance-dirt.hs
+  -- other-modules:
+  other-extensions:    OverloadedStrings
+  build-depends:
+      base < 5
+    , bytestring
+    , network
+    , directory
+    , process
+
+    , tidal
+    , vivid-osc
+  -- hs-source-dirs:
+  default-language:    Haskell2010
+
+library
+  exposed-modules:     DanceDirt
+  -- other-modules:
+  other-extensions:    OverloadedStrings
+  build-depends:
+      base < 5
+    , bytestring
+    , network
+    , directory
+
+    , tidal
+
+    , vivid-osc
+  -- hs-source-dirs:
+  default-language:    Haskell2010
